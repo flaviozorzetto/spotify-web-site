@@ -1,0 +1,88 @@
+.drawer {
+    max-width: 100vw;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    transition: 0.3s all;
+    z-index: 99999999;
+}
+
+.drawer-open {
+    display: flex;
+    width: 447px;
+    transition: 0.3s all;
+}
+
+.overlay {
+    display: none;
+    background: rgba(0,0,0,.75);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 9;
+}
+
+.drawer-item {
+    color: white;
+}
+
+.drawer-list {
+    padding: 38px;
+}
+
+.drawer-item:hover, .drawer-item-2:hover {
+    color: #3CE478
+}
+
+
+.drawer-link {
+    width: 80%;
+    display: inline-block;
+    transition: 1s all;
+}
+
+.hidden {
+    display: none;
+}
+
+.drawer-line {
+    margin-bottom: 34px;
+    margin-top: 40px;
+    height: 2px;
+    width: 20px;
+    background-color: white;   
+}
+
+.drawer-container .spotify__svg{
+    margin: 38px;
+    width: 90px;
+}
+
+.drawer-item, .drawer-item-2 {
+    margin-bottom: 25px;
+}
+
+.drawer-item {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.drawer-item-2 {
+    color: #d9dadc;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.slide-left {
+    animation: slide-left 0.55s;
+}
+
+@keyframes slide-left {
+    0% { margin-left: 100px; opacity: 0; }
+    100% { margin-left: 0; opacity: 1; }
+}

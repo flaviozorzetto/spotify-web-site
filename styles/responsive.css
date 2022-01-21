@@ -1,0 +1,130 @@
+@media screen and (max-width: 1200px){
+    .footer-nav {
+        width: 970px;
+    }
+    .header-container {
+        max-width: 970px;
+    }
+
+    .main_container {
+        background-size: 153%;
+        background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
+        background-position: right 40% center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .footer-nav {
+        width: 90%;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1rem;
+        z-index: 999999999999999999999999999999999999999999999999999;
+    }
+
+    .burger .line {
+        background-color: white;
+        width: 22px;
+        height: 3px;
+        border-radius: 1px;
+        transition: .2s all;
+        transform-origin: 20px;
+    }
+
+    .x .line:first-child {
+        transform: rotate(-45deg);
+        transition: .2s all;
+        transform-origin: 20px;
+    }
+    
+    .x .line:nth-child(2) {
+        display: none;
+    }
+    
+    .x .line:last-child {
+        transform: rotate(45deg);
+        transition: .2s all;
+        transform-origin: 20px;
+    }
+
+    .header-container {
+        height: 60px;
+        max-width: 90%;
+    }
+
+    .first-container {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .media {
+        margin-left: 0;
+        margin: 120px 0 10px 0;
+    }
+
+    .util-links, .community, .company {
+        margin: 50px 0 22px 0;
+    }
+
+    .svg-item {
+        width: 45px;
+        height: 45px;
+    }
+    .sub_container {
+        width: 600px
+    }
+
+    .footer-grey-list {
+        flex-wrap: wrap;
+        margin-right: 1rem;
+    }
+
+    .footer-grey-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .sub_container {
+        width: 220px;
+    }
+
+    .main_title {
+        font-size: 3rem;
+    }
+
+    .header-container {
+        max-width: 280px;
+    } 
+
+    .footer-grey-text {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .world-svg {
+        margin-right: 0;
+    }
+
+    .copyright {
+        margin-right: 0;
+        min-width: 93px;
+    }
+}
