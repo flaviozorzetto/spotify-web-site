@@ -1,12 +1,26 @@
 .main_container {
     position: relative;
     background-color: #2941AB;
-    background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
-    background-position: 46% 7%;
-    background-size: 175%;
     width: 100%;
     height: 886px;
 }
+
+.main_container::before {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+    content: "";
+    background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+    background-position: 46% 7%; 
+    background-size: 175%;
+    max-width: 100vw;
+    height: 886px;
+    background-repeat: no-repeat;
+
+    animation: loopImage 10s infinite alternate-reverse;
+}
+
 
 .sub_container {
     display: flex;
@@ -56,4 +70,9 @@
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1.5px;
+}
+
+@keyframes loopImage {
+    100% {background-size: 155%;}
+    0% {background-size: 175%;}
 }

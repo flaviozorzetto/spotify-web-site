@@ -3,6 +3,8 @@
 }
 
 footer {
+    position: relative;
+    z-index: 99999;
     background-color: black;
     height: 530px;
     width: 100%;

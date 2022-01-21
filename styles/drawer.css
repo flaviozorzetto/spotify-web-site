@@ -42,7 +42,6 @@
 .drawer-link {
     width: 80%;
     display: inline-block;
-    transition: 1s all;
 }
 
 .hidden {

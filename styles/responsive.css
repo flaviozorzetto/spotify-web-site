@@ -6,7 +6,7 @@
         max-width: 970px;
     }
 
-    .main_container {
+    .main_container::before {
         background-size: 153%;
         background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
         background-position: right 40% center;
